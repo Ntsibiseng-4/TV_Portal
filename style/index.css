@@ -6,7 +6,10 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('../Photos/background.jpeg');
+    background-image: linear-gradient(rgba(9, 20, 42, 0.75), rgba(9, 20, 42, 0.9)), url('../Photos/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     overflow-x: hidden;
 }
 
@@ -112,7 +115,7 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 
-p{
+.par{
     color: rgb(106, 138, 176);
     font-size: 1.1rem;
     line-height: 1.6;
@@ -199,20 +202,32 @@ p{
 }
 
 .section2{
+    background: rgba(8, 16, 34, 0.7);
     padding: 30px 24px;
     position: relative;
     overflow: hidden;
-    max-width: 1300px;
+    max-width: 100%;
     margin: 0px auto;
     text-align: center;
+    border-radius: 0;
+}
+
+.section2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(56,189,248,0), rgba(56,189,248,0.9), rgba(239,68,68,0));
 }
 
 hr{
     width: 80%;
     border: 0;
-    height: 1px;
+    height: 0;
     margin: 40px auto;
-    background: linear-gradient(90deg, rgba(56,189,248,0.8), #2563eb);
+    background: transparent;
 }
 
 .badge2{
@@ -264,7 +279,7 @@ p strong{
 
 .descri{
     font-family: Inter, sans-serif;
-    rgb(106, 138, 176);
+    color: rgb(106, 138, 176);
     font-size: 17px;
     max-width: 560px;
     margin: 0px auto;
@@ -306,6 +321,8 @@ p strong{
     color: rgb(239, 68, 68);
     line-height: 1;
     margin-bottom: 8px;
+    text-align: start;
+    margin-left: 10px;
 }
 
 .point{
@@ -314,6 +331,8 @@ p strong{
     font-size: 16px;
     color: rgb(240, 244, 255);
     margin-bottom: 10px;
+    text-align: start;
+    margin-left: 10px;
 }
 
 .details{
@@ -322,7 +341,7 @@ p strong{
     color: rgb(106, 138, 176);
     line-height: 1.65;
     text-align: start;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .first{
@@ -372,4 +391,28 @@ p strong{
     transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
     transform: translateY(-10px);
+}
+
+.opp{
+    margin-top: 48px;
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.08), rgba(139, 92, 246, 0.08));
+    border: 1px solid rgba(14, 165, 233, 0.15);
+    border-radius: 14px;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.par2{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.phrasing{
+    color: rgb(106, 138, 176);
+    text-align: start;
+    line-height: 24px;
 }
