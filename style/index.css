@@ -267,6 +267,7 @@ hr{
     letter-spacing: -0.5px;
     margin-bottom: 16px;
     line-height: 1.15;
+    font-size: 35px;
 }
 
 .text-redish{
@@ -280,7 +281,7 @@ p strong{
 .descri{
     font-family: Inter, sans-serif;
     color: rgb(106, 138, 176);
-    font-size: 17px;
+    font-size: 19px;
     max-width: 560px;
     margin: 0px auto;
     line-height: 1.7;
@@ -296,6 +297,7 @@ p strong{
 .category-card{
     border-radius: 16px;
     cursor: default;
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     box-shadow: none;
 }
@@ -416,3 +418,124 @@ p strong{
     text-align: start;
     line-height: 24px;
 }
+
+.badge3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #539afd;
+  background: rgba(14, 165, 233, 0.08);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: 100px;
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.badge-dot3 {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent-cyan);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.blueish {
+  color: #38bdf8;
+}
+
+.category-grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(14, 165, 233), transparent);
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+/* reveal the line when hovering the card container */
+.category-card:hover .line,
+.card:hover .line {
+  opacity: 1;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: 0.3s;
+  transform: translateY(0px);
+  box-shadow: none;
+  cursor: default;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.one {
+  background: rgba(13, 31, 56, 0.6);
+  border: 1px solid rgba(14, 125, 146, 0.1);
+}
+
+.one:hover {
+  background: linear-gradient(
+    145deg,
+    rgba(14, 165, 233, 0.18) 0%,
+    rgba(10, 22, 40, 0.9) 100%
+  );
+  border: 1px solid rgba(14, 165, 233, 0.25);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: 0.3s;
+  transform: translateY(-6px);
+  box-shadow: rgba(14, 165, 233, 0.18) 0px 16px 48px;
+  cursor: default;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.two {
+  background: rgba(10, 17, 40, 0.6);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.two:hover {
+  background: linear-gradient(
+    145deg,
+    rgba(34, 211, 238, 0.15) 0%,
+    rgba(10, 22, 40, 0.9) 100%
+  );
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: 0.3s;
+  transform: translateY(-6px);
+  box-shadow: rgba(34, 211, 238, 0.15) 0px 16px 48px;
+  cursor: default;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.three{
+    background: rgba(10, 22, 40, 0.6);
+    border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.three:hover {
+    
+}
+
