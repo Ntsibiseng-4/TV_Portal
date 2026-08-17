@@ -14,16 +14,22 @@ body{
 }
 
 header{
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     width: 100%;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
     padding: 10px 30px;
     flex-wrap: wrap;
+    z-index: 50;
+    transition: 0.3s;
+    background: #0f172a;
+    border-bottom-color: #7db2fd;
+    opacity: 0.9;
 }
 
 .logo{
