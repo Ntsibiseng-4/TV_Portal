@@ -449,6 +449,11 @@ p strong{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  align-items: stretch;
+}
+
+.grd2{
+    margin-top: 50px;
 }
 
 .line {
@@ -457,7 +462,7 @@ p strong{
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgb(14, 165, 233), transparent);
+  background: linear-gradient(90deg, transparent, var(--card-accent, rgb(14, 165, 233)), transparent);
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }
@@ -469,6 +474,10 @@ p strong{
 }
 
 .card {
+  --card-accent: rgb(14, 165, 233);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border-radius: 16px;
   padding: 28px 24px;
   transition: 0.3s;
@@ -482,8 +491,9 @@ p strong{
 }
 
 .one {
-  background: rgba(13, 31, 56, 0.6);
-  border: 1px solid rgba(14, 125, 146, 0.1);
+  --card-accent: rgb(14, 165, 233);
+  background: rgba(10, 22, 40, 0.6);
+  border: 1px solid rgba(14, 165, 233, 0.1);
 }
 
 .one:hover {
@@ -507,16 +517,16 @@ p strong{
 }
 
 .two {
-  background: rgba(10, 17, 40, 0.6);
+  --card-accent: rgb(34, 211, 238);
+  background: rgba(10, 22, 40, 0.6);
   border: 1px solid rgba(14, 165, 233, 0.1);
 }
 
 .two:hover {
-  background: linear-gradient(
-    145deg,
+    background: linear-gradient(145deg, 
     rgba(34, 211, 238, 0.15) 0%,
     rgba(10, 22, 40, 0.9) 100%
-  );
+    );
   border: 1px solid rgba(34, 211, 238, 0.25);
   border-radius: 16px;
   padding: 28px 24px;
@@ -531,11 +541,92 @@ p strong{
 }
 
 .three{
+    --card-accent: rgb(139, 92, 246);
     background: rgba(10, 22, 40, 0.6);
     border: 1px solid rgba(14, 165, 233, 0.1);
 }
 
 .three:hover {
-    
+    background: linear-gradient(145deg, rgba(139, 92, 246, 0.18) 0%,
+    rgba(10, 22,40, 0.9) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 16px;
+  padding: 28px 24px;
+  transition: 0.3s;
+  transform: translateY(-6px);
+  box-shadow: rgba(139, 92, 246, 0.18) 0px 16px 48px;
+  cursor: default;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.four{
+    --card-accent: rgb(16, 185, 129);
+    background: rgba(10, 22, 40, 0.6);
+    border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.four:hover{
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.15) 0%,
+    rgba(10, 22, 40, 0.9) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: 0.3s;
+  transform: translateY(-6px);
+  box-shadow: rgba(16, 185, 129, 0.15) 0px 16px 48px;
+  cursor: default;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.five{
+    --card-accent: rgb(245, 158, 11);
+    background: rgba(10, 22, 40, 0.6);
+    border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.five:hover{
+    background: linear-gradient(145deg, 
+    rgba(245, 158, 11, 0.15) 0%,
+    rgba(10, 22, 40, 0.9) 100%
+    );
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: 0.3s;
+  transform: translateY(-6px);
+  box-shadow: rgba(16, 185, 129, 0.15) 0px 16px 48px;
+  cursor: default;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.six{
+    --card-accent: rgb(236, 72, 153);
+    background: rgba(10, 22, 40, 0.6);
+    border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.six:hover{
+  background: linear-gradient(145deg, 
+    rgba(236, 72, 153, 0.15) 0%, rgba(10, 22, 40, 0.9) 100%);
+    border: 1px solid rgba(236, 72, 153, 0.25);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: 0.3s;
+  transform: translateY(-6px);
+  box-shadow: rgba(236, 72, 153, 0.15) 0px 16px 48px;
+  cursor: default;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
 }
 
