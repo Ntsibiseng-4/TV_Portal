@@ -308,6 +308,11 @@ hr{
     color: #EF4444;
 }
 
+.text-colors{
+    background: linear-gradient(90deg, rgb(236, 72, 153), rgb(139, 92, 246)) text;
+    -webkit-text-fill-color: transparent;
+}
+
 p strong{
     color: #007bff;
 }
@@ -511,7 +516,7 @@ p strong{
 }
 
 .grd2{
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .line {
@@ -794,7 +799,7 @@ p strong{
     margin-top: 30px;
 }
 
-.num{
+.number{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -881,4 +886,120 @@ p strong{
     gap: 56px;
     align-items: center;
     margin-bottom: 72px;
+    margin-top: 30px;
+}
+
+.right-hero h3{
+    font-family: Outfit, sans-serif;
+    font-weight: 700;
+    font-size: clamp(22px, 3vw, 34px);
+    color: rgb(240, 244, 255);
+    line-height: 1.25;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.right-hero p{
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: rgb(106, 138, 176);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: start;
+
+}
+
+.sec{
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: rgb(168, 196, 240);
+    line-height: 1.8;
+    margin-bottom: 32px;
+    text-align: start;
+}
+
+.listing1{
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(14, 165, 233);
+    margin-top: 7px;
+    flex-shrink: 0;
+    box-shadow: rgb(14, 165, 233) 0px 0px 8px;
+    
+}
+
+/* List items with colored dots */
+ul.sec {
+    list-style: none;
+    padding: 0;
+}
+
+ul.sec li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+ul.sec li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot1::before {
+    background: rgb(14, 165, 233);
+    box-shadow: rgb(14, 165, 233) 0px 0px 8px;
+}
+
+.dot2::before {
+    background: rgb(34, 211, 238);
+    box-shadow: rgb(34, 211, 238) 0px 0px 8px;
+}
+
+.dot3::before {
+    background: rgb(139, 92, 246);
+    box-shadow: rgb(139, 92, 246) 0px 0px 8px;
+}
+
+.dot4::before {
+    background: rgb(245, 158, 11);
+    box-shadow: rgb(245, 158, 11) 0px 0px 8px;
+}
+
+.left-hero-pic{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.left-hero-pic img{
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.nothing{
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.2) 0%, rgba(139, 92, 246, 0.15) 100%);
+    border-radius: 20px;
+}
+
+.nothing2{
+        position: absolute;
+    inset: 0px;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    border-radius: 20px;
+    pointer-events: none;
 }
